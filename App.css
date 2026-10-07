@@ -1,0 +1,64 @@
+.fetch-users-page {
+  min-height: 100vh;
+  padding: 40px 20px;
+  background: #f5f7fb;
+  box-sizing: border-box;
+}
+
+.fetch-users-page h1 {
+  text-align: center;
+  margin-bottom: 35px;
+  color: #1e293b;
+}
+
+.fetch-users-grid {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.fetch-user-card {
+  background: #68b1de;
+  padding: 22px;
+  border-radius: 14px;
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.08);
+}
+
+.fetch-user-card h2 {
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+
+.fetch-user-card p {
+  margin: 9px 0;
+  color: #141619;
+}
+
+.status-message,
+.error-message {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 20px;
+}
+
+.error-message {
+  color: #dc2626;
+}
+
+@media (max-width: 900px) {
+  .fetch-users-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .fetch-users-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .fetch-users-page {
+    padding: 25px 15px;
+  }
+}
